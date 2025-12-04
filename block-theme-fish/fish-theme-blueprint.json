@@ -62,39 +62,15 @@
       "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/cropped-Fisch-Titelseite.webp'"
     },
     {
-      "step": "wp-cli",
-      "command": "wp eval '$attachment = get_posts(array(\"post_type\" => \"attachment\", \"name\" => \"labyrinthfische\", \"posts_per_page\" => 1)); if(!empty($attachment)) { $post_data = array(\"post_title\" => \"Labyrinthfische\", \"post_content\" => \"Labyrinthfische sind eine faszinierende Gruppe von Süßwasserfischen, die ein spezielles Labyrinthorgan besitzen. Dieses ermöglicht es ihnen, atmosphärische Luft zu atmen.\", \"post_status\" => \"publish\", \"post_type\" => \"post\"); $post_id = wp_insert_post($post_data); if($post_id && !is_wp_error($post_id)) { set_post_thumbnail($post_id, $attachment[0]->ID); } }'"
-    },
-    {
-      "step": "wp-cli",
-      "command": "wp eval '$attachment = get_posts(array(\"post_type\" => \"attachment\", \"name\" => \"diskusfische\", \"posts_per_page\" => 1)); if(!empty($attachment)) { $post_data = array(\"post_title\" => \"Diskusfische\", \"post_content\" => \"Diskusfische gehören zu den farbenprächtigsten und beliebtesten Aquarienfischen. Sie stammen aus dem Amazonasbecken und benötigen warmes, weiches Wasser.\", \"post_status\" => \"publish\", \"post_type\" => \"post\"); $post_id = wp_insert_post($post_data); if($post_id && !is_wp_error($post_id)) { set_post_thumbnail($post_id, $attachment[0]->ID); } }'"
-    },
-    {
-      "step": "wp-cli",
-      "command": "wp eval '$attachment = get_posts(array(\"post_type\" => \"attachment\", \"name\" => \"siamesischer-kampffisch\", \"posts_per_page\" => 1)); if(!empty($attachment)) { $post_data = array(\"post_title\" => \"Siamesischer Kampffisch\", \"post_content\" => \"Der Siamesische Kampffisch ist bekannt für seine prächtigen Flossen und leuchtenden Farben. Männchen sollten einzeln gehalten werden, da sie untereinander aggressiv sind.\", \"post_status\" => \"publish\", \"post_type\" => \"post\"); $post_id = wp_insert_post($post_data); if($post_id && !is_wp_error($post_id)) { set_post_thumbnail($post_id, $attachment[0]->ID); } }'"
-    },
-    {
-      "step": "wp-cli",
-      "command": "wp eval '$attachment = get_posts(array(\"post_type\" => \"attachment\", \"name\" => \"schleierschwanz-goldfisch\", \"posts_per_page\" => 1)); if(!empty($attachment)) { $post_data = array(\"post_title\" => \"Schleierschwanz-Goldfisch\", \"post_content\" => \"Der Schleierschwanz-Goldfisch ist eine der elegantesten Goldfischvarianten mit langen, fließenden Flossen. Er benötigt kühles Wasser und viel Platz zum Schwimmen.\", \"post_status\" => \"publish\", \"post_type\" => \"post\"); $post_id = wp_insert_post($post_data); if($post_id && !is_wp_error($post_id)) { set_post_thumbnail($post_id, $attachment[0]->ID); } }'"
-    },
-    {
-      "step": "wp-cli",
-      "command": "wp eval '$attachment = get_posts(array(\"post_type\" => \"attachment\", \"name\" => \"malabarbaerbling\", \"posts_per_page\" => 1)); if(!empty($attachment)) { $post_data = array(\"post_title\" => \"Malabarbaerbling\", \"post_content\" => \"Der Malabarbaerbling ist ein lebhafter Schwarmfisch aus Südindien. Er zeigt besonders schöne Farben in gut bepflanzten Aquarien mit dunklem Bodengrund.\", \"post_status\" => \"publish\", \"post_type\" => \"post\"); $post_id = wp_insert_post($post_data); if($post_id && !is_wp_error($post_id)) { set_post_thumbnail($post_id, $attachment[0]->ID); } }'"
-    },
-    {
-      "step": "wp-cli",
-      "command": "wp eval '$attachment = get_posts(array(\"post_type\" => \"attachment\", \"name\" => \"clownfisch\", \"posts_per_page\" => 1)); if(!empty($attachment)) { $post_data = array(\"post_title\" => \"Clownfisch\", \"post_content\" => \"Clownfische leben in Symbiose mit Seeanemonen und sind wahre Meeresjuwelen. Sie wurden durch einen bekannten Animationsfilm weltweit berühmt.\", \"post_status\" => \"publish\", \"post_type\" => \"post\"); $post_id = wp_insert_post($post_data); if($post_id && !is_wp_error($post_id)) { set_post_thumbnail($post_id, $attachment[0]->ID); } }'"
-    },
-    {
       "step": "importWxr",
       "file": {
         "resource": "url",
-        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/homepage.xml"
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/pages/content.xml"
       }
     },
     {
-      "step": "wp-cli",
-      "command": "wp eval '$page = get_page_by_title(\"Fische\"); if($page) { update_option(\"page_on_front\", $page->ID); update_option(\"show_on_front\", \"page\"); }'"
+      "step": "runPHP",
+      "code": "<?php require_once 'wordpress/wp-load.php'; $posts = array('labyrinthfische', 'diskusfische', 'siamesischer-kampffisch', 'schleierschwanz-goldfisch', 'malabarbaerbling', 'clownfisch'); foreach($posts as $slug) { $post = get_page_by_path($slug, OBJECT, 'post'); $attachment = get_posts(array('post_type' => 'attachment', 'name' => $slug, 'posts_per_page' => 1)); if($post && !empty($attachment)) { set_post_thumbnail($post->ID, $attachment[0]->ID); } } $page = get_page_by_title('Fische'); if($page) { update_option('page_on_front', $page->ID); update_option('show_on_front', 'page'); }"
     }
   ]
 }

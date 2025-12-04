@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+	<title>Fisch</title>
+	<wp:wxr_version>1.2</wp:wxr_version>
+	
+	<!-- Post: Labyrinthfische -->
+	<item>
+		<title>Labyrinthfische</title>
+		<wp:post_type>post</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>labyrinthfische</wp:post_name>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Labyrinthfische sind eine faszinierende Gruppe von Süßwasserfischen, die ein spezielles Labyrinthorgan besitzen. Dieses ermöglicht es ihnen, atmosphärische Luft zu atmen.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:postmeta>
+			<wp:meta_key>_thumbnail_attachment</wp:meta_key>
+			<wp:meta_value>labyrinthfische</wp:meta_value>
+		</wp:postmeta>
+	</item>
+	
+	<!-- Post: Diskusfische -->
+	<item>
+		<title>Diskusfische</title>
+		<wp:post_type>post</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>diskusfische</wp:post_name>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Diskusfische gehören zu den farbenprächtigsten und beliebtesten Aquarienfischen. Sie stammen aus dem Amazonasbecken und benötigen warmes, weiches Wasser.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:postmeta>
+			<wp:meta_key>_thumbnail_attachment</wp:meta_key>
+			<wp:meta_value>diskusfische</wp:meta_value>
+		</wp:postmeta>
+	</item>
+	
+	<!-- Post: Siamesischer Kampffisch -->
+	<item>
+		<title>Siamesischer Kampffisch</title>
+		<wp:post_type>post</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>siamesischer-kampffisch</wp:post_name>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Der Siamesische Kampffisch ist bekannt für seine prächtigen Flossen und leuchtenden Farben. Männchen sollten einzeln gehalten werden, da sie untereinander aggressiv sind.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:postmeta>
+			<wp:meta_key>_thumbnail_attachment</wp:meta_key>
+			<wp:meta_value>siamesischer-kampffisch</wp:meta_value>
+		</wp:postmeta>
+	</item>
+	
+	<!-- Post: Schleierschwanz-Goldfisch -->
+	<item>
+		<title>Schleierschwanz-Goldfisch</title>
+		<wp:post_type>post</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>schleierschwanz-goldfisch</wp:post_name>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Der Schleierschwanz-Goldfisch ist eine der elegantesten Goldfischvarianten mit langen, fließenden Flossen. Er benötigt kühles Wasser und viel Platz zum Schwimmen.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:postmeta>
+			<wp:meta_key>_thumbnail_attachment</wp:meta_key>
+			<wp:meta_value>schleierschwanz-goldfisch</wp:meta_value>
+		</wp:postmeta>
+	</item>
+	
+	<!-- Post: Malabarbaerbling -->
+	<item>
+		<title>Malabarbaerbling</title>
+		<wp:post_type>post</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>malabarbaerbling</wp:post_name>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Der Malabarbaerbling ist ein lebhafter Schwarmfisch aus Südindien. Er zeigt besonders schöne Farben in gut bepflanzten Aquarien mit dunklem Bodengrund.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:postmeta>
+			<wp:meta_key>_thumbnail_attachment</wp:meta_key>
+			<wp:meta_value>malabarbaerbling</wp:meta_value>
+		</wp:postmeta>
+	</item>
+	
+	<!-- Post: Clownfisch -->
+	<item>
+		<title>Clownfisch</title>
+		<wp:post_type>post</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>clownfisch</wp:post_name>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>Clownfische leben in Symbiose mit Seeanemonen und sind wahre Meeresjuwelen. Sie wurden durch einen bekannten Animationsfilm weltweit berühmt.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<wp:postmeta>
+			<wp:meta_key>_thumbnail_attachment</wp:meta_key>
+			<wp:meta_value>clownfisch</wp:meta_value>
+		</wp:postmeta>
+	</item>
+	
+	<!-- Page: Fische (Homepage) -->
+	<item>
+		<title>Fische</title>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>fische</wp:post_name>
+		<content:encoded><![CDATA[<!-- wp:cover {"useFeaturedImage":false,"dimRatio":0,"overlayColor":"contrast","isUserOverlayColor":true,"minHeight":35,"minHeightUnit":"em","contentPosition":"center center","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull is-light" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50);min-height:35em"><span aria-hidden="true" class="wp-block-cover__background has-contrast-background-color has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:heading {"textAlign":"center","fontSize":"xx-large"} -->
+<h2 class="wp-block-heading has-text-align-center has-xx-large-font-size">Naturwunder unter Wasser</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Entdecke die faszinierende Welt der Aquarienfische</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"margin":{"top":"0"},"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="margin-top:0;padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)"><!-- wp:heading {"textAlign":"center","fontSize":"xx-large"} -->
+<h2 class="wp-block-heading has-text-align-center has-xx-large-font-size">Entdecke sie mit mir ...</h2>
+<!-- /wp:heading -->
+
+<!-- wp:query {"queryId":21,"query":{"perPage":3,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false},"align":"wide"} -->
+<div class="wp-block-query alignwide"><!-- wp:post-template {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"grid","columnCount":3}} -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3"} /-->
+
+<!-- wp:post-title {"textAlign":"center","isLink":true,"fontSize":"large"} /-->
+
+<!-- wp:post-excerpt {"textAlign":"center","moreText":"Weiterlesen","excerptLength":20} /--></div>
+<!-- /wp:group -->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination {"paginationArrow":"arrow","align":"wide","layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:query-pagination-previous /-->
+
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination --></div>
+<!-- /wp:query --></main>
+<!-- /wp:group -->]]></content:encoded>
+	</item>
+</channel>
+</rss>
