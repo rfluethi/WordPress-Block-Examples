@@ -330,11 +330,11 @@ Text Domain: fish-theme
 ## Conclusion
 
 Congratulations! You've created a modern WordPress Block Theme with:
-✅ Parallax cover block
-✅ Dynamic query loop
-✅ Featured images
-✅ Gradient text effects
-✅ Responsive grid layout
-✅ Full Site Editing compatibility
+- Parallax cover block
+- Dynamic query loop
+- Featured images
+- Gradient text effects
+- Responsive grid layout
+- Full Site Editing compatibility
 
 Your theme is now ready to showcase content beautifully!
