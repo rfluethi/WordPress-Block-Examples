@@ -1,0 +1,69 @@
+{
+  "landingPage": "/",
+  "preferredVersions": {
+    "php": "8.2",
+    "wp": "latest"
+  },
+  "phpExtensionBundles": [
+    "kitchen-sink"
+  ],
+  "steps": [
+    {
+      "step": "login",
+      "username": "admin",
+      "password": "password"
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "Fisch"
+      }
+    },
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "url",
+        "url": "https://github.com/rfluethi/WordPress-Playgrounds/raw/main/block-theme-fish/theme/fish.zip"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "wp-cli",
+      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/block-theme-fish/media/Clownfisch.webp' --featured_image"
+    },
+    {
+      "step": "wp-cli",
+      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/block-theme-fish/media/Diskusfische.webp'"
+    },
+    {
+      "step": "wp-cli",
+      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/block-theme-fish/media/Labyrinthfische.webp'"
+    },
+    {
+      "step": "wp-cli",
+      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/block-theme-fish/media/Malabarbaerbling.webp'"
+    },
+    {
+      "step": "wp-cli",
+      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/block-theme-fish/media/Schleierschwanz-Goldfisch.webp'"
+    },
+    {
+      "step": "wp-cli",
+      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/block-theme-fish/media/Siamesischer-Kampffisch.webp'"
+    },
+    {
+      "step": "wp-cli",
+      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/block-theme-fish/media/Wallpaper-with-a-sea-reef.webp'"
+    },
+    {
+      "step": "wp-cli",
+      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/block-theme-fish/media/cropped-Fisch-Titelseite.webp'"
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once 'wordpress/wp-load.php'; $uploads = wp_upload_dir(); $base = $uploads['baseurl']; $images = array('Clownfisch.webp', 'Diskusfische.webp', 'Labyrinthfische.webp', 'Malabarbaerbling.webp', 'Schleierschwanz-Goldfisch.webp', 'Siamesischer-Kampffisch.webp'); $content = ''; foreach($images as $img) { $content .= '<!-- wp:image {\"sizeSlug\":\"large\"} --><figure class=\"wp-block-image size-large\"><img src=\"' . $base . '/' . date('Y') . '/' . date('m') . '/' . $img . '\" alt=\"' . pathinfo($img, PATHINFO_FILENAME) . '\"/></figure><!-- /wp:image -->'; } $post_data = array('post_title' => 'Fische', 'post_content' => $content, 'post_status' => 'publish', 'post_type' => 'page'); $post_id = wp_insert_post($post_data); update_option('page_on_front', $post_id); update_option('show_on_front', 'page');"
+    }
+  ]
+}
