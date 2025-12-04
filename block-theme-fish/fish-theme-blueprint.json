@@ -31,46 +31,88 @@
     },
     {
       "step": "wp-cli",
-      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Clownfisch.webp'"
+      "command": "wp media import \"https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Clownfisch.webp\" --title=\"Clownfisch\" --desc=\"Bild eines Clownfisches\" --alt=\"Clownfisch\""
     },
     {
       "step": "wp-cli",
-      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Diskusfische.webp'"
+      "command": "wp media import \"https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Diskusfische.webp\" --title=\"Diskusfische\" --desc=\"Bild eines Diskusfischen\" --alt=\"Diskusfische\""
     },
     {
       "step": "wp-cli",
-      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Labyrinthfische.webp'"
+      "command": "wp media import \"https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Labyrinthfische.webp\" --title=\"Labyrinthfische\" --desc=\"Bild eines Labyrinthfischen\" --alt=\"Labyrinthfische\""
     },
     {
       "step": "wp-cli",
-      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Malabarbaerbling.webp'"
+      "command": "wp media import \"https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Malabarbaerbling.webp\" --title=\"Malabarbärbling\" --desc=\"Bild eines Malabarbärblings\" --alt=\"Malabarbärbling\""
     },
     {
       "step": "wp-cli",
-      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Schleierschwanz-Goldfisch.webp'"
+      "command": "wp media import \"https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Schleierschwanz-Goldfisch.webp\" --title=\"Schleierschwanz-Goldfisch\" --desc=\"Bild eines Schleierschwanz-Goldfisches\" --alt=\"Schleierschwanz-Goldfisch\""
     },
     {
       "step": "wp-cli",
-      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Siamesischer-Kampffisch.webp'"
+      "command": "wp media import \"https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Siamesischer-Kampffisch.webp\" --title=\"Siamesischer Kampffisch\" --desc=\"Bild eines siamesischen Kampffisches\" --alt=\"Siamesischer Kampffisch\""
     },
     {
       "step": "wp-cli",
-      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Wallpaper-with-a-sea-reef.webp'"
+      "command": "wp media import \"https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Wallpaper-with-a-sea-reef.webp\" --title=\"Meeresriff Wallpaper\" --desc=\"Wallpaper mit einem Meeresriff\" --alt=\"Meeresriff Wallpaper\""
     },
     {
       "step": "wp-cli",
-      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/cropped-Fisch-Titelseite.webp'"
+      "command": "wp media import \"https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/cropped-Fisch-Titelseite.webp\" --title=\"Fisch Titelseite\" --desc=\"Titelbild mit Fischmotiv\" --alt=\"Fisch Titelseite\""
     },
     {
       "step": "importWxr",
       "file": {
         "resource": "url",
-        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/pages/content.xml"
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/pages/labyrinthfische.xml"
+      }
+    },
+    {
+      "step": "importWxr",
+      "file": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/pages/diskusfische.xml"
+      }
+    },
+    {
+      "step": "importWxr",
+      "file": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/pages/siamesischer-kampffisch.xml"
+      }
+    },
+    {
+      "step": "importWxr",
+      "file": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/pages/schleierschwanz-goldfisch.xml"
+      }
+    },
+    {
+      "step": "importWxr",
+      "file": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/pages/malabarbaerbling.xml"
+      }
+    },
+    {
+      "step": "importWxr",
+      "file": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/pages/clownfisch.xml"
+      }
+    },
+    {
+      "step": "importWxr",
+      "file": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/pages/homepage.xml"
       }
     },
     {
       "step": "runPHP",
-      "code": "<?php require_once 'wordpress/wp-load.php'; $posts = array('labyrinthfische', 'diskusfische', 'siamesischer-kampffisch', 'schleierschwanz-goldfisch', 'malabarbaerbling', 'clownfisch'); foreach($posts as $slug) { $post = get_page_by_path($slug, OBJECT, 'post'); $attachment = get_posts(array('post_type' => 'attachment', 'name' => $slug, 'posts_per_page' => 1)); if($post && !empty($attachment)) { set_post_thumbnail($post->ID, $attachment[0]->ID); } } $page = get_page_by_title('Fische'); if($page) { update_option('page_on_front', $page->ID); update_option('show_on_front', 'page'); }"
+      "code": "<?php require_once 'wordpress/wp-load.php'; $posts = array('labyrinthfische', 'diskusfische', 'siamesischer-kampffisch', 'schleierschwanz-goldfisch', 'malabarbaerbling', 'clownfisch'); foreach($posts as $slug) { $post = get_page_by_path($slug, OBJECT, 'post'); $attachment = get_posts(array('post_type' => 'attachment', 'name' => $slug, 'posts_per_page' => 1)); if($post && !empty($attachment)) { set_post_thumbnail($post->ID, $attachment[0]->ID); } } $wallpaper = get_posts(array('post_type' => 'attachment', 'name' => 'wallpaper-with-a-sea-reef', 'posts_per_page' => 1)); $title_img = get_posts(array('post_type' => 'attachment', 'name' => 'cropped-fisch-titelseite', 'posts_per_page' => 1)); $page = get_page_by_path('fische', OBJECT, 'page'); if($page && !empty($wallpaper) && !empty($title_img)) { $wallpaper_url = wp_get_attachment_url($wallpaper[0]->ID); $wallpaper_id = $wallpaper[0]->ID; $title_url = wp_get_attachment_url($title_img[0]->ID); $title_id = $title_img[0]->ID; $content = get_post_field('post_content', $page->ID); $content = str_replace('WALLPAPER_URL', $wallpaper_url, $content); $content = str_replace('WALLPAPER_ID', $wallpaper_id, $content); $content = str_replace('TITLE_URL', $title_url, $content); $content = str_replace('TITLE_ID', $title_id, $content); wp_update_post(array('ID' => $page->ID, 'post_content' => $content)); update_option('page_on_front', $page->ID); update_option('show_on_front', 'page'); }"
     }
   ]
 }
