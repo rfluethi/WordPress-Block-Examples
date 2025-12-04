@@ -1,49 +1,93 @@
-# Fish Block Theme - WordPress Playground Blueprint
+# WordPress Block Theme - Fish Theme Example
 
-A WordPress Block Theme with a fish theme for WordPress Playground.
+This directory demonstrates how to create a **complete WordPress Block Theme** with custom homepage, query loops, and featured images using the **WordPress Playground Blueprint** system.
 
-## Usage
+![Fish Theme Example](screenshot.png)
 
-### Online Demo
-Open the Blueprint directly in WordPress Playground:
-```
+## Live Demo
+
+```url
 https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/fish-theme-blueprint.json
 ```
 
-### What does this Blueprint do?
+## What This Example Shows
 
-1. **Creates a WordPress instance** with PHP 8.2 and the latest WordPress version
-2. **Installs and activates** the Fish theme from the GitHub repository
-3. **Imports images** of fish from the GitHub repository:
-   - Clownfish
-   - Discus fish
-   - Labyrinth fish
-   - Malabar danio
-   - Veiltail goldfish
-   - Siamese fighting fish
-   - Wallpaper with sea reef
-   - Fish cover image (cropped)
-4. **Creates blog posts** with featured images for each fish species:
-   - Labyrinthfische (Labyrinth fish)
-   - Diskusfische (Discus fish)
-   - Siamesischer Kampffisch (Siamese fighting fish)
-   - Schleierschwanz-Goldfisch (Veiltail goldfish)
-   - Malabarbaerbling (Malabar danio)
-   - Clownfisch (Clownfish)
-5. **Creates a home page** with:
-   - Cover block with parallax effect using the sea reef wallpaper
-   - Fish logo as centered image
-   - Heading "Naturwunder unter Wasser" (Natural wonders underwater)
-   - Query loop displaying the latest 3 posts in a grid layout
-6. **Sets the page as the site's home page**
+This WordPress Playground demonstrates **advanced Blueprint configuration** for creating a fully functional WordPress site with custom content and theme:
 
-## Structure
+### Blueprint Features
 
-```
-block-theme-fish/
-├── fish-theme-blueprint.json  # Blueprint configuration
-├── README.md                  # This file
-├── media/                     # Fish images
+- **Custom Block Theme Installation** - Automatically installs a theme from GitHub
+- **Automated Media Import** - Imports multiple images via wp-cli commands
+- **WXR Content Import** - Creates posts and pages from XML files
+- **Featured Image Assignment** - PHP script automatically assigns images to posts
+- **Placeholder Replacement** - Dynamic image URL replacement in page content
+- **Homepage Configuration** - Sets custom page as site's front page
+
+### Content Features
+
+- **Cover Block with Parallax** - Hero section with background image and overlay content
+- **Query Loop Pattern** - Grid display of posts with featured images
+- **Gradient Text Effects** - Radial gradient styling on post titles
+- **Responsive Grid Layout** - 3-column layout that adapts to screen size
+- **Multi-language Content** - German content about different fish species
+
+### The Problem This Solves
+
+When creating WordPress Playground demos or test sites, manually setting up:
+- Theme installation and activation
+- Media library uploads
+- Post creation with featured images
+- Custom homepage design
+- Featured image assignments
+
+...can be time-consuming and error-prone. This Blueprint **automates the entire process** in under a minute.
+
+### Implementation Techniques
+
+- **Blueprint JSON** - Complete site configuration in one file
+- **WP-CLI Commands** - Automated WordPress operations
+- **WXR Import** - Standard WordPress export/import format
+- **PHP Execution** - Custom PHP scripts for advanced setup
+- **Meta Queries** - Finding attachments by filename
+- **String Replacement** - Dynamic content generation
+
+## How It Works
+
+1. **Theme Installation**: Downloads and activates the Fish theme from GitHub
+2. **Media Import**: Uses wp-cli to import 8 fish images from GitHub
+3. **Content Import**: Imports 6 posts and 1 page from WXR files
+4. **Image Assignment**: PHP script matches images to posts by filename
+5. **Placeholder Replacement**: Replaces WALLPAPER_URL and TITLE_URL with actual image URLs
+6. **Homepage Setup**: Sets the "Fische" page as the site's front page
+
+## Key WordPress Features Used
+
+- **Block Theme** - Modern WordPress theme with theme.json
+- **Cover Blocks** - Full-width hero sections with background images
+- **Query Loop** - Dynamic post display with pagination
+- **Featured Images** - Post thumbnails in grid layout
+- **Group Blocks** - Semantic HTML structure
+- **Post Template** - Custom layout for query loop items
+- **Gradient Styles** - CSS gradients on text elements
+
+Perfect for: **Educational demos**, **wildlife blogs**, **aquarium websites**, **nature photography portfolios**, and learning **WordPress Playground Blueprint development**.
+
+## Blueprint Advantages
+
+- Fully automated setup (no manual configuration)
+- Reproducible results every time
+- Easy to fork and customize
+- No server or hosting required
+- Shareable via URL
+- Perfect for testing and development
+
+## Directory Structure
+
+```text
+/block-theme-fish/
+├── fish-theme-blueprint.json       # Blueprint configuration
+├── README.md                       # This file
+├── media/                          # Fish images
 │   ├── Clownfisch.webp
 │   ├── Diskusfische.webp
 │   ├── Labyrinthfische.webp
@@ -52,85 +96,86 @@ block-theme-fish/
 │   ├── Siamesischer-Kampffisch.webp
 │   ├── Wallpaper-with-a-sea-reef.webp
 │   └── cropped-Fisch-Titelseite.webp
+├── pages/                          # WXR content files
+│   ├── clownfisch.xml
+│   ├── diskusfische.xml
+│   ├── homepage.xml
+│   ├── labyrinthfische.xml
+│   ├── malabarbaerbling.xml
+│   ├── schleierschwanz-goldfisch.xml
+│   └── siamesischer-kampffisch.xml
 └── theme/
-    └── fish.zip               # Theme files
+    └── fish.zip                    # Custom block theme
 ```
 
 ## Technical Details
 
-- **PHP Version**: 8.2
-- **WordPress Version**: Latest
-- **Theme Source**: GitHub Repository (raw download)
-- **Images Source**: GitHub Repository (raw githubusercontent)
-- **Login**: admin / password
-- **Blueprint Steps**: Modular with separate wp-cli commands for each post
+**Blueprint Configuration:**
+- PHP Version: 8.2
+- WordPress Version: Latest
+- Login Credentials: admin / password
 
-## Customization
+**Blueprint Steps:**
+1. Login as admin
+2. Set site name to "Fisch"
+3. Install Fish theme from GitHub
+4. Import 8 images via wp-cli
+5. Import 7 WXR files (6 posts + 1 page)
+6. Run PHP script for featured images and homepage setup
 
-Each post is created with a separate `wp-cli` step, making it easy to customize:
+**Key PHP Operations:**
+```php
+// Set featured images
+set_post_thumbnail($post->ID, $attachment[0]->ID);
 
-1. **Edit Post Content**: Modify the `post_content` in each `wp eval` command
-2. **Change Post Titles**: Update the `post_title` parameter
-3. **Add More Posts**: Duplicate a step and change the fish name and attachment
-4. **Modify the Home Page**: Edit the last step's `$content` variable with your custom blocks
+// Replace placeholders
+str_replace('WALLPAPER_URL', $wallpaper_url, $content);
 
-### Example: Editing a Post
-
-Find the step for the fish you want to edit, for example "Labyrinthfische":
-```json
-{
-  "step": "wp-cli",
-  "command": "wp eval '$attachment = get_posts(...); ... \"post_content\" => \"YOUR CUSTOM CONTENT HERE\" ...'"
-}
+// Set homepage
+update_option('page_on_front', $page->ID);
+update_option('show_on_front', 'page');
 ```
 
-## Features
+## Customization Guide
 
-### Modern Design
-- Cover blocks with parallax effects
-- Responsive grid layout
-- Featured images for all posts
-- Query loop with pagination
+### Modify Post Content
 
-### Dynamic Content
-- Images loaded from Media Library (no hardcoded URLs)
-- Posts use `set_post_thumbnail()` for featured images
-- Cover blocks use `useFeaturedImage:true` for optimal performance
+Edit the XML files in `/pages/` directory:
+```xml
+<content:encoded><![CDATA[
+<!-- wp:paragraph -->
+<p>Your custom content here</p>
+<!-- /wp:paragraph -->
+]]></content:encoded>
+```
 
-### Responsive
-- Grid layout adapts automatically (minimumColumnWidth: 23rem)
-- Works on all screen sizes
+### Add More Posts
+
+1. Create a new XML file in `/pages/`
+2. Add image to `/media/`
+3. Add media import step to blueprint
+4. Add WXR import step to blueprint
+5. Update PHP script's `$post_attachments` array
+
+### Change Theme
+
+Replace `fish.zip` in `/theme/` directory and update the blueprint URL.
 
 ## Version History
 
+### Version 1.3 (Current)
+- ✅ Fixed featured image matching with filename mapping
+- ✅ Improved PHP script with meta_query fallback
+- ✅ Simplified cover block syntax
+- ✅ Removed ID attributes from blocks
+
 ### Version 1.2
-- ✅ Separated each post creation into individual wp-cli steps
-- ✅ Easier customization of post content
-- ✅ README translated to English
+- ✅ Separated WXR files for each post
+- ✅ Added homepage with query loop
+- ✅ Implemented placeholder replacement
 
 ### Version 1.1
-- ✅ Fixed repository name (WordPress-Block-Examples)
-- ✅ Changed theme URL to raw download URL
-- ✅ Fixed image URLs
-- ✅ Removed duplicate steps
-- ✅ Set landing page to frontend
-- ✅ Automatic creation of homepage with all images
-- ✅ Added Query Loop for blog posts
-
-## Troubleshooting
-
-**If images are not displayed:**
-- Check if the files exist in the GitHub repository under `block-theme-fish/media/`
-- Ensure the commit has been pushed
-- Images must be available as raw URLs
-
-**If the theme is not loaded:**
-- Check if `fish.zip` exists under `block-theme-fish/theme/`
-- The URL must point to the raw download version (not the web view)
-
-**If posts are not created:**
-- Check the browser console for PHP errors
-- Verify that the image slugs match the attachment names in the Media Library
+- ✅ Initial release with theme and content
 
 ## License
 
