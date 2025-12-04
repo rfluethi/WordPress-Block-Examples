@@ -1,38 +1,49 @@
-# Fisch Block Theme - WordPress Playground Blueprint
+# Fish Block Theme - WordPress Playground Blueprint
 
-Ein WordPress Block Theme mit Fisch-Thema für WordPress Playground.
+A WordPress Block Theme with a fish theme for WordPress Playground.
 
-## Verwendung
+## Usage
 
 ### Online Demo
-Öffne den Blueprint direkt in WordPress Playground:
+Open the Blueprint directly in WordPress Playground:
 ```
 https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/fish-theme-blueprint.json
 ```
 
-### Was macht dieser Blueprint?
+### What does this Blueprint do?
 
-1. **Erstellt eine WordPress-Instanz** mit PHP 8.2 und der neuesten WordPress-Version
-2. **Installiert und aktiviert** das Fisch-Theme aus dem GitHub Repository
-3. **Importiert Bilder** von Fischen aus dem GitHub Repository:
-   - Clownfisch
-   - Diskusfische
-   - Labyrinthfische
-   - Malabarbaerbling
-   - Schleierschwanz-Goldfisch
-   - Siamesischer-Kampffisch
-   - Wallpaper mit Meeresriff
-   - Fisch-Titelseite (zugeschnitten)
-4. **Erstellt eine Seite** mit allen importierten Fischbildern
-5. **Setzt die Seite als Startseite**
+1. **Creates a WordPress instance** with PHP 8.2 and the latest WordPress version
+2. **Installs and activates** the Fish theme from the GitHub repository
+3. **Imports images** of fish from the GitHub repository:
+   - Clownfish
+   - Discus fish
+   - Labyrinth fish
+   - Malabar danio
+   - Veiltail goldfish
+   - Siamese fighting fish
+   - Wallpaper with sea reef
+   - Fish cover image (cropped)
+4. **Creates blog posts** with featured images for each fish species:
+   - Labyrinthfische (Labyrinth fish)
+   - Diskusfische (Discus fish)
+   - Siamesischer Kampffisch (Siamese fighting fish)
+   - Schleierschwanz-Goldfisch (Veiltail goldfish)
+   - Malabarbaerbling (Malabar danio)
+   - Clownfisch (Clownfish)
+5. **Creates a home page** with:
+   - Cover block with parallax effect using the sea reef wallpaper
+   - Fish logo as centered image
+   - Heading "Naturwunder unter Wasser" (Natural wonders underwater)
+   - Query loop displaying the latest 3 posts in a grid layout
+6. **Sets the page as the site's home page**
 
-## Struktur
+## Structure
 
 ```
 block-theme-fish/
-├── fish-theme-blueprint.json  # Blueprint-Konfiguration
-├── README.md                  # Diese Datei
-├── media/                     # Fischbilder
+├── fish-theme-blueprint.json  # Blueprint configuration
+├── README.md                  # This file
+├── media/                     # Fish images
 │   ├── Clownfisch.webp
 │   ├── Diskusfische.webp
 │   ├── Labyrinthfische.webp
@@ -42,35 +53,85 @@ block-theme-fish/
 │   ├── Wallpaper-with-a-sea-reef.webp
 │   └── cropped-Fisch-Titelseite.webp
 └── theme/
-    └── fish.zip               # Theme-Dateien
+    └── fish.zip               # Theme files
 ```
 
-## Technische Details
+## Technical Details
 
 - **PHP Version**: 8.2
 - **WordPress Version**: Latest
-- **Theme-Quelle**: GitHub Repository (raw download)
-- **Bilder-Quelle**: GitHub Repository (raw githubusercontent)
+- **Theme Source**: GitHub Repository (raw download)
+- **Images Source**: GitHub Repository (raw githubusercontent)
 - **Login**: admin / password
+- **Blueprint Steps**: Modular with separate wp-cli commands for each post
 
-## Änderungen
+## Customization
+
+Each post is created with a separate `wp-cli` step, making it easy to customize:
+
+1. **Edit Post Content**: Modify the `post_content` in each `wp eval` command
+2. **Change Post Titles**: Update the `post_title` parameter
+3. **Add More Posts**: Duplicate a step and change the fish name and attachment
+4. **Modify the Home Page**: Edit the last step's `$content` variable with your custom blocks
+
+### Example: Editing a Post
+
+Find the step for the fish you want to edit, for example "Labyrinthfische":
+```json
+{
+  "step": "wp-cli",
+  "command": "wp eval '$attachment = get_posts(...); ... \"post_content\" => \"YOUR CUSTOM CONTENT HERE\" ...'"
+}
+```
+
+## Features
+
+### Modern Design
+- Cover blocks with parallax effects
+- Responsive grid layout
+- Featured images for all posts
+- Query loop with pagination
+
+### Dynamic Content
+- Images loaded from Media Library (no hardcoded URLs)
+- Posts use `set_post_thumbnail()` for featured images
+- Cover blocks use `useFeaturedImage:true` for optimal performance
+
+### Responsive
+- Grid layout adapts automatically (minimumColumnWidth: 23rem)
+- Works on all screen sizes
+
+## Version History
+
+### Version 1.2
+- ✅ Separated each post creation into individual wp-cli steps
+- ✅ Easier customization of post content
+- ✅ README translated to English
 
 ### Version 1.1
-- ✅ Repository-Namen korrigiert (WordPress-Block-Examples)
-- ✅ Theme-URL auf Raw-Download-URL geändert
-- ✅ Bilder-URLs korrigiert
-- ✅ Doppelte Steps entfernt
-- ✅ Landing Page auf Frontend gesetzt
-- ✅ Automatische Erstellung einer Startseite mit allen Bildern
-- ✅ `runPHP` Step für bessere Bildintegration
+- ✅ Fixed repository name (WordPress-Block-Examples)
+- ✅ Changed theme URL to raw download URL
+- ✅ Fixed image URLs
+- ✅ Removed duplicate steps
+- ✅ Set landing page to frontend
+- ✅ Automatic creation of homepage with all images
+- ✅ Added Query Loop for blog posts
 
-## Fehlerbehebung
+## Troubleshooting
 
-Falls die Bilder nicht angezeigt werden:
-- Prüfe, ob die Dateien im GitHub Repository unter `block-theme-fish/media/` vorhanden sind
-- Stelle sicher, dass der Commit gepusht wurde
-- Die Bilder müssen als Raw-URLs verfügbar sein
+**If images are not displayed:**
+- Check if the files exist in the GitHub repository under `block-theme-fish/media/`
+- Ensure the commit has been pushed
+- Images must be available as raw URLs
 
-Falls das Theme nicht geladen wird:
-- Prüfe, ob `fish.zip` unter `block-theme-fish/theme/` existiert
-- Die URL muss auf die Raw-Download-Version zeigen (nicht auf die Web-Ansicht)
+**If the theme is not loaded:**
+- Check if `fish.zip` exists under `block-theme-fish/theme/`
+- The URL must point to the raw download version (not the web view)
+
+**If posts are not created:**
+- Check the browser console for PHP errors
+- Verify that the image slugs match the attachment names in the Media Library
+
+## License
+
+This project is open source and available under the MIT License.
