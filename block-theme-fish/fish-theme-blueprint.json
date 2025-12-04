@@ -23,7 +23,7 @@
       "step": "installTheme",
       "themeData": {
         "resource": "url",
-        "url": "https://github.com/rfluethi/WordPress-Playgrounds/raw/main/block-theme-fish/theme/fish.zip"
+        "url": "https://github.com/rfluethi/WordPress-Block-Examples/raw/main/block-theme-fish/theme/fish.zip"
       },
       "options": {
         "activate": true
@@ -31,35 +31,35 @@
     },
     {
       "step": "wp-cli",
-      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/block-theme-fish/media/Clownfisch.webp' --featured_image"
+      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Clownfisch.webp' --featured_image"
     },
     {
       "step": "wp-cli",
-      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/block-theme-fish/media/Diskusfische.webp'"
+      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Diskusfische.webp'"
     },
     {
       "step": "wp-cli",
-      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/block-theme-fish/media/Labyrinthfische.webp'"
+      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Labyrinthfische.webp'"
     },
     {
       "step": "wp-cli",
-      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/block-theme-fish/media/Malabarbaerbling.webp'"
+      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Malabarbaerbling.webp'"
     },
     {
       "step": "wp-cli",
-      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/block-theme-fish/media/Schleierschwanz-Goldfisch.webp'"
+      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Schleierschwanz-Goldfisch.webp'"
     },
     {
       "step": "wp-cli",
-      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/block-theme-fish/media/Siamesischer-Kampffisch.webp'"
+      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Siamesischer-Kampffisch.webp'"
     },
     {
       "step": "wp-cli",
-      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/block-theme-fish/media/Wallpaper-with-a-sea-reef.webp'"
+      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/Wallpaper-with-a-sea-reef.webp'"
     },
     {
       "step": "wp-cli",
-      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/block-theme-fish/media/cropped-Fisch-Titelseite.webp'"
+      "command": "wp media import 'https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/media/cropped-Fisch-Titelseite.webp'"
     },
     {
       "step": "runPHP",

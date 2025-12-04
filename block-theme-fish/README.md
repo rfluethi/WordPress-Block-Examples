@@ -7,7 +7,7 @@ Ein WordPress Block Theme mit Fisch-Thema für WordPress Playground.
 ### Online Demo
 Öffne den Blueprint direkt in WordPress Playground:
 ```
-https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/block-theme-fish/fish-theme-blueprint.json
+https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/fish-theme-blueprint.json
 ```
 
 ### Was macht dieser Blueprint?
@@ -56,7 +56,7 @@ block-theme-fish/
 ## Änderungen
 
 ### Version 1.1
-- ✅ Repository-Namen korrigiert (WordPress-Playgrounds statt WordPress-Block-Examples)
+- ✅ Repository-Namen korrigiert (WordPress-Block-Examples)
 - ✅ Theme-URL auf Raw-Download-URL geändert
 - ✅ Bilder-URLs korrigiert
 - ✅ Doppelte Steps entfernt
