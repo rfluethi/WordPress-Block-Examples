@@ -83,7 +83,7 @@
     },
     {
       "step": "wp-cli",
-      "command": "wp eval '$attachment = get_posts(array(\"post_type\" => \"attachment\", \"name\" => \"clownfisch\", \"posts_per_page\" => 1)); if(!empty($attachment)) { $post_data = array(\"post_title\" => \"Clownfisch\", \"post_content\" => \"Clownfische leben in Symbiose mit Seeanemonen und sind wahre Meeresjuwelen. Sie sind durch den Film \\\"Findet Nemo\\\" weltweit bekannt geworden.\", \"post_status\" => \"publish\", \"post_type\" => \"post\"); $post_id = wp_insert_post($post_data); if($post_id && !is_wp_error($post_id)) { set_post_thumbnail($post_id, $attachment[0]->ID); } }'"
+      "command": "wp eval '$attachment = get_posts(array(\"post_type\" => \"attachment\", \"name\" => \"clownfisch\", \"posts_per_page\" => 1)); if(!empty($attachment)) { $post_data = array(\"post_title\" => \"Clownfisch\", \"post_content\" => \"Clownfische leben in Symbiose mit Seeanemonen und sind wahre Meeresjuwelen. Sie wurden durch einen bekannten Animationsfilm weltweit berühmt.\", \"post_status\" => \"publish\", \"post_type\" => \"post\"); $post_id = wp_insert_post($post_data); if($post_id && !is_wp_error($post_id)) { set_post_thumbnail($post_id, $attachment[0]->ID); } }'"
     },
     {
       "step": "wp-cli",
