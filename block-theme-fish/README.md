@@ -1,6 +1,6 @@
 # WordPress Block Theme - Fish Theme Example
 
-This directory demonstrates how to create a **complete WordPress Block Theme** with custom homepage, query loops, and featured images using the **WordPress Playground Blueprint** system.
+This directory demonstrates how to create a **modern WordPress Block Theme** with cover blocks, parallax effects, query loops, and featured images using the **WordPress Block Editor**.
 
 ![Fish Theme Example](screenshot.png)
 
@@ -10,83 +10,91 @@ This directory demonstrates how to create a **complete WordPress Block Theme** w
 https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/fish-theme-blueprint.json
 ```
 
+## Documentation
+
+For a complete step-by-step tutorial on creating this Block Theme, see the [Block Theme Fish Tutorial](block-theme-fish-tutorial.md).
+
 ## What This Example Shows
 
-This WordPress Playground demonstrates **advanced Blueprint configuration** for creating a fully functional WordPress site with custom content and theme:
+This WordPress Block Theme demonstrates **modern full-site editing techniques** that showcase the power of WordPress blocks for creating beautiful, dynamic websites:
 
-### Blueprint Features
+### Layout Features
 
-- **Custom Block Theme Installation** - Automatically installs a theme from GitHub
-- **Automated Media Import** - Imports multiple images via wp-cli commands
-- **WXR Content Import** - Creates posts and pages from XML files
-- **Featured Image Assignment** - PHP script automatically assigns images to posts
-- **Placeholder Replacement** - Dynamic image URL replacement in page content
-- **Homepage Configuration** - Sets custom page as site's front page
-
-### Content Features
-
-- **Cover Block with Parallax** - Hero section with background image and overlay content
-- **Query Loop Pattern** - Grid display of posts with featured images
+- **Parallax Cover Blocks** - Hero section with stunning depth effect
+- **Centered Logo Overlay** - Professional branding on hero image
+- **Query Loop Pattern** - Automatically displays latest posts
+- **Featured Image Integration** - Dynamic images from Media Library
 - **Gradient Text Effects** - Radial gradient styling on post titles
-- **Responsive Grid Layout** - 3-column layout that adapts to screen size
-- **Multi-language Content** - German content about different fish species
+- **3-Column Responsive Grid** - Adapts perfectly to all screen sizes
+- **Equal Height Cards** - Consistent post display with 4:3 aspect ratio
 
 ### The Problem This Solves
 
-When creating WordPress Playground demos or test sites, manually setting up:
-- Theme installation and activation
-- Media library uploads
-- Post creation with featured images
-- Custom homepage design
-- Featured image assignments
+Traditional WordPress themes require:
+- PHP template files for layouts
+- Custom CSS for effects
+- Plugin dependencies for advanced features
+- Technical knowledge to modify
 
-...can be time-consuming and error-prone. This Blueprint **automates the entire process** in under a minute.
+This **Block Theme** provides a **code-free solution** using only:
+- Native WordPress blocks
+- Block Editor controls
+- theme.json configuration
+- No plugins required
 
 ### Implementation Techniques
 
-- **Blueprint JSON** - Complete site configuration in one file
-- **WP-CLI Commands** - Automated WordPress operations
-- **WXR Import** - Standard WordPress export/import format
-- **PHP Execution** - Custom PHP scripts for advanced setup
-- **Meta Queries** - Finding attachments by filename
-- **String Replacement** - Dynamic content generation
+- **Cover Blocks** - For hero sections with background images
+- **Parallax Effects** - Built-in WordPress parallax feature
+- **Query Loops** - Dynamic post display without coding
+- **Post Templates** - Custom layouts for query results
+- **Featured Images** - WordPress native thumbnail system
+- **Gradient Styling** - CSS gradients via Block Editor
+- **Grid Layouts** - Responsive column system
+- **Full Site Editing** - Complete theme customization via editor
 
 ## How It Works
 
-1. **Theme Installation**: Downloads and activates the Fish theme from GitHub
-2. **Media Import**: Uses wp-cli to import 8 fish images from GitHub
-3. **Content Import**: Imports 6 posts and 1 page from WXR files
-4. **Image Assignment**: PHP script matches images to posts by filename
-5. **Placeholder Replacement**: Replaces WALLPAPER_URL and TITLE_URL with actual image URLs
-6. **Homepage Setup**: Sets the "Fische" page as the site's front page
+1. **Cover Block Structure**: Hero section uses Cover block with parallax-enabled background
+2. **Image Overlay**: Logo is centered using Image block with custom width
+3. **Content Organization**: Main content wrapped in semantic `<main>` group
+4. **Dynamic Posts**: Query Loop automatically fetches and displays posts
+5. **Grid System**: Post Template uses 3-column grid with flexible sizing
+6. **Featured Images**: Cover blocks within loop use `useFeaturedImage` attribute
+7. **Text Effects**: Post titles styled with radial gradient background
 
 ## Key WordPress Features Used
 
-- **Block Theme** - Modern WordPress theme with theme.json
-- **Cover Blocks** - Full-width hero sections with background images
-- **Query Loop** - Dynamic post display with pagination
-- **Featured Images** - Post thumbnails in grid layout
+- **Block Theme Architecture** - Modern FSE-compatible theme structure
+- **Cover Blocks** - Full-width hero sections with backgrounds
+- **Parallax Effects** - Depth and motion on scroll
+- **Query Loop Blocks** - Dynamic content display
+- **Post Template Blocks** - Custom post layouts
+- **Featured Images** - Post thumbnails
 - **Group Blocks** - Semantic HTML structure
-- **Post Template** - Custom layout for query loop items
-- **Gradient Styles** - CSS gradients on text elements
+- **Grid Layout** - Responsive multi-column display
+- **Gradient Styles** - CSS gradient text effects
+- **theme.json** - Centralized theme configuration
 
-Perfect for: **Educational demos**, **wildlife blogs**, **aquarium websites**, **nature photography portfolios**, and learning **WordPress Playground Blueprint development**.
+Perfect for: **Portfolio sites**, **photography blogs**, **wildlife websites**, **aquarium showcases**, **nature documentation**, and learning **modern WordPress Block Theme development**.
 
-## Blueprint Advantages
+## Block Theme Advantages
 
-- Fully automated setup (no manual configuration)
-- Reproducible results every time
-- Easy to fork and customize
-- No server or hosting required
-- Shareable via URL
-- Perfect for testing and development
+- No coding required for layouts
+- Visual editing in real-time
+- Fully customizable via Block Editor
+- Compatible with Full Site Editing
+- Future-proof WordPress architecture
+- Mobile-responsive by default
+- Accessible and performant
 
 ## Directory Structure
 
 ```text
 /block-theme-fish/
-├── fish-theme-blueprint.json       # Blueprint configuration
+├── fish-theme-blueprint.json       # WordPress Playground auto-setup
 ├── README.md                       # This file
+├── block-theme-fish-tutorial.md    # Step-by-step tutorial
 ├── media/                          # Fish images
 │   ├── Clownfisch.webp
 │   ├── Diskusfische.webp
@@ -96,7 +104,7 @@ Perfect for: **Educational demos**, **wildlife blogs**, **aquarium websites**, *
 │   ├── Siamesischer-Kampffisch.webp
 │   ├── Wallpaper-with-a-sea-reef.webp
 │   └── cropped-Fisch-Titelseite.webp
-├── pages/                          # WXR content files
+├── pages/                          # Page & post content (WXR format)
 │   ├── clownfisch.xml
 │   ├── diskusfische.xml
 │   ├── homepage.xml
@@ -105,61 +113,137 @@ Perfect for: **Educational demos**, **wildlife blogs**, **aquarium websites**, *
 │   ├── schleierschwanz-goldfisch.xml
 │   └── siamesischer-kampffisch.xml
 └── theme/
-    └── fish.zip                    # Custom block theme
+    └── fish.zip                    # Block Theme files
 ```
+
+## Theme Structure
+
+The Fish Block Theme includes:
+
+```text
+fish-theme/
+├── style.css              # Theme header & metadata
+├── theme.json            # Theme configuration (colors, spacing, etc.)
+├── templates/            # Page templates
+│   └── index.html       # Main template
+└── parts/               # Reusable template parts
+    ├── header.html
+    └── footer.html
+```
+
+### theme.json Configuration
+
+The theme uses `theme.json` for:
+- Color palettes (Primary Blue, Contrast White)
+- Spacing units (px, em, rem, vh, vw, %)
+- Typography settings
+- Layout defaults
+
+### Block Patterns
+
+The homepage demonstrates these block patterns:
+- **Hero Section**: Cover + Image + Heading
+- **Content Grid**: Query Loop + Post Template + Cover
+- **Post Card**: Featured Image + Gradient Title
 
 ## Technical Details
 
-**Blueprint Configuration:**
-- PHP Version: 8.2
-- WordPress Version: Latest
-- Login Credentials: admin / password
+**WordPress Requirements:**
+- WordPress Version: 6.0+
+- PHP Version: 7.4+
+- Block Editor (Gutenberg)
 
-**Blueprint Steps:**
-1. Login as admin
-2. Set site name to "Fisch"
-3. Install Fish theme from GitHub
-4. Import 8 images via wp-cli
-5. Import 7 WXR files (6 posts + 1 page)
-6. Run PHP script for featured images and homepage setup
+**Theme Features:**
+- Full Site Editing (FSE) compatible
+- No classic templates (PHP-free layouts)
+- Fully customizable via Site Editor
+- Responsive design built-in
+- Accessibility optimized
 
-**Key PHP Operations:**
-```php
-// Set featured images
-set_post_thumbnail($post->ID, $attachment[0]->ID);
+**Block Configuration:**
+```html
+<!-- Cover Block with Parallax -->
+hasParallax: true
+dimRatio: 0
+minHeight: 35em
 
-// Replace placeholders
-str_replace('WALLPAPER_URL', $wallpaper_url, $content);
+<!-- Query Loop -->
+postType: "post"
+perPage: 6
+layout: grid
+columnCount: 3
 
-// Set homepage
-update_option('page_on_front', $page->ID);
-update_option('show_on_front', 'page');
+<!-- Post Cover -->
+useFeaturedImage: true
+aspectRatio: "4/3"
+opacity: 0
 ```
 
 ## Customization Guide
 
-### Modify Post Content
+### Modify Homepage Layout
 
-Edit the XML files in `/pages/` directory:
-```xml
-<content:encoded><![CDATA[
-<!-- wp:paragraph -->
-<p>Your custom content here</p>
-<!-- /wp:paragraph -->
-]]></content:encoded>
+1. Open **Site Editor** → **Templates** → **Homepage**
+2. Edit blocks visually
+3. Save changes
+4. Changes apply site-wide
+
+### Change Colors
+
+Edit `theme.json`:
+```json
+"color": {
+  "palette": [
+    {
+      "slug": "primary",
+      "color": "#YOUR_COLOR",
+      "name": "Primary"
+    }
+  ]
+}
 ```
 
 ### Add More Posts
 
-1. Create a new XML file in `/pages/`
-2. Add image to `/media/`
-3. Add media import step to blueprint
-4. Add WXR import step to blueprint
-5. Update PHP script's `$post_attachments` array
+1. Create new post in WordPress
+2. Add featured image
+3. Publish
+4. Automatically appears in Query Loop
 
-### Change Theme
+### Modify Grid Layout
 
-Replace `fish.zip` in `/theme/` directory and update the blueprint URL.
+1. Select Post Template block
+2. Change **Columns** setting (e.g., 2 or 4 columns)
+3. Adjust **Gap** for spacing
+
+## Learning Resources
+
+- **Tutorial**: See [block-theme-fish-tutorial.md](block-theme-fish-tutorial.md) for detailed instructions
+- **WordPress Block Theme Docs**: [developer.wordpress.org/themes/block-themes](https://developer.wordpress.org/themes/block-themes/)
+- **theme.json Reference**: [developer.wordpress.org/themes/advanced-topics/theme-json](https://developer.wordpress.org/themes/advanced-topics/theme-json/)
+- **Query Loop Guide**: [wordpress.org/support/article/query-loop-block](https://wordpress.org/support/article/query-loop-block/)
+
+## Tips & Best Practices
+
+### Parallax Performance
+- Use optimized images (WebP format recommended)
+- Avoid extremely large background images
+- Test scroll performance on mobile devices
+
+### Responsive Design
+- Use viewport units (vw) for flexible sizing
+- Set minimum column widths in grid layouts
+- Test on various screen sizes
+
+### Accessibility
+- Add alt text to all images
+- Ensure color contrast meets WCAG standards
+- Use proper heading hierarchy
+
+### SEO Optimization
+- Write descriptive post titles
+- Add post excerpts
+- Use featured images for better social sharing
 
 ## Version History
 
@@ -167,7 +251,7 @@ Replace `fish.zip` in `/theme/` directory and update the blueprint URL.
 - ✅ Fixed featured image matching with filename mapping
 - ✅ Improved PHP script with meta_query fallback
 - ✅ Simplified cover block syntax
-- ✅ Removed ID attributes from blocks
+- ✅ Added comprehensive tutorial documentation
 
 ### Version 1.2
 - ✅ Separated WXR files for each post
