@@ -12,9 +12,9 @@
 		<wp:post_type>page</wp:post_type>
 		<wp:status>publish</wp:status>
 		<wp:post_name>fische</wp:post_name>
-		<content:encoded><![CDATA[<!-- wp:cover {"url":"WALLPAPER_URL","id":WALLPAPER_ID,"hasParallax":true,"dimRatio":0,"isUserOverlayColor":true,"minHeight":35,"minHeightUnit":"em","align":"full","layout":{"type":"default"}} -->
-<div class="wp-block-cover alignfull has-parallax" style="min-height:35em"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><img class="wp-block-cover__image-background wp-image-WALLPAPER_ID has-parallax" alt="" src="WALLPAPER_URL" style="object-position:50% 50%" data-object-fit="cover" data-object-position="50% 50%"/><div class="wp-block-cover__inner-container"><!-- wp:image {"id":TITLE_ID,"width":"400px","sizeSlug":"full","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="TITLE_URL" alt="Schwarzstreifen-Kardinalbarsch mit charakteristischen dunklen horizontalen Streifen und weissen Punkten auf den Flossen vor weissem Hintergrund" class="wp-image-TITLE_ID" style="width:400px"/></figure>
+		<content:encoded><![CDATA[<!-- wp:cover {"url":"WALLPAPER_URL","hasParallax":true,"dimRatio":0,"minHeight":35,"minHeightUnit":"em","align":"full"} -->
+<div class="wp-block-cover alignfull has-parallax" style="min-height:35em"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div role="img" class="wp-block-cover__image-background has-parallax" style="background-position:50% 50%;background-image:url(WALLPAPER_URL)"></div><div class="wp-block-cover__inner-container"><!-- wp:image {"width":"400px","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="TITLE_URL" alt="Schwarzstreifen-Kardinalbarsch mit charakteristischen dunklen horizontalen Streifen und weissen Punkten auf den Flossen vor weissem Hintergrund" style="width:400px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}},"textColor":"contrast","fontSize":"xx-large"} -->
