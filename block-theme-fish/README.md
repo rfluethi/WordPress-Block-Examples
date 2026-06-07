@@ -1,55 +1,101 @@
-# Fish – WordPress-Block-Theme-Demo (Playground)
+# WordPress Block Theme - Fish Theme Example
 
-Demo des Block-Themes **„Fish"** (Child-Theme von Twenty Twenty-Five) mit allen Beispielseiten, Beiträgen, Bildern, Menü und Schriften – geladen über einen WordPress-Playground-Blueprint.
+This directory demonstrates how to create a modern WordPress Block Theme with cover blocks, parallax effects, query loops, and featured images using the WordPress Block Editor.
 
-## Demo starten
+## Live Demo
 
-Beide Links führen zur identischen Demo. Empfohlen ist die Bundle-Variante (lädt am schnellsten, alles in einer Datei).
-
-**Bundle (schnell, empfohlen):**
-
-[**▶ Live-Demo öffnen (Bundle)**](https://playground.wordpress.net/?blueprint-url=https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/bundle/block-theme-fish.zip)
-
-```
-https://playground.wordpress.net/?blueprint-url=https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/bundle/block-theme-fish.zip
+```url
+https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/blueprint.json
 ```
 
-**Einzel-Blueprint (zum Ansehen/Bearbeiten):**
+## Documentation
 
+For a complete step-by-step tutorial on creating this Block Theme, see the [Block Theme Fish Tutorial](block-theme-fish-tutorial.md).
+
+## What This Example Shows
+
+This WordPress Block Theme demonstrates modern full-site editing techniques that showcase the power of WordPress blocks for creating beautiful, dynamic websites.
+
+### Layout Features
+
+- **Parallax Cover Blocks** - Hero section with stunning depth effect
+- **Centered Logo Overlay** - Professional branding on hero image
+- **Query Loop Pattern** - Automatically displays latest posts
+- **Featured Image Integration** - Dynamic images from Media Library
+- **Gradient Text Effects** - Radial gradient styling on post titles
+- **3-Column Responsive Grid** - Adapts perfectly to all screen sizes
+- **Equal Height Cards** - Consistent post display with 4:3 aspect ratio
+
+### The Problem This Solves
+
+Traditional WordPress themes require PHP template files, custom CSS, plugin dependencies, and technical knowledge to modify.
+
+This Block Theme provides a code-free solution using only native WordPress blocks, Block Editor controls, and theme.json configuration. No plugins required.
+
+### Key Technologies
+
+- **Block Theme Architecture** - Modern FSE-compatible theme structure
+- **Cover Blocks** - Full-width hero sections with backgrounds
+- **Parallax Effects** - Depth and motion on scroll
+- **Query Loop Blocks** - Dynamic content display
+- **Post Template Blocks** - Custom post layouts
+- **Featured Images** - Post thumbnails
+- **Grid Layout** - Responsive multi-column display
+- **Gradient Styles** - CSS gradient text effects
+- **theme.json** - Centralized theme configuration
+
+Perfect for portfolio sites, photography blogs, wildlife websites, aquarium showcases, nature documentation, and learning modern WordPress Block Theme development.
+
+## Block Theme Advantages
+
+- No coding required for layouts
+- Visual editing in real-time
+- Fully customizable via Block Editor
+- Compatible with Full Site Editing
+- Future-proof WordPress architecture
+- Mobile-responsive by default
+- Accessible and performant
+
+## Directory Structure
+
+```text
+/block-theme-fish/
+├── blueprint.json      # WordPress Playground auto-setup
+├── README.md           # This file
+├── content.xml         # Pages, posts & images (WXR format)
+├── theme/
+│   └── fish.zip        # Block Theme files
+├── uploads/            # Images and fonts
+└── bundle/
+    └── block-theme-fish.zip   # Self-contained one-file demo
 ```
-https://playground.wordpress.net/?blueprint-url=https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/blueprint.json
+
+## Theme Structure
+
+The Fish Block Theme includes:
+
+```text
+fish/
+├── style.css           # Theme header & metadata
+├── theme.json          # Theme configuration (colors, fonts, spacing)
+├── templates/          # Page templates (front-page, home, single, page, archive, search, 404 ...)
+├── parts/              # Reusable template parts (header.html, footer.html)
+└── patterns/           # Block patterns
 ```
 
-Admin-Login in der Demo: `admin` / `password`
+## Technical Requirements
 
-> Auslieferung über das **jsDelivr-CDN** (schnell, weltweit gecacht). Nach einem Push kann das CDN bis zu ~12 h alte Stände zeigen; bei Bedarf unter `https://www.jsdelivr.com/tools/purge` die geänderten URLs leeren oder einen Git-Tag (`@v1` statt `@main`) verwenden.
+- WordPress Version: 6.0+
+- PHP Version: 7.4+
+- Block Editor (Gutenberg)
 
-## Inhalt
+## Learning Resources
 
-| Datei | Zweck |
-|---|---|
-| `blueprint.json` | Playground-Blueprint (Einzeldatei, lädt Theme/Inhalt per jsDelivr-URL) |
-| `content.xml` | Vollständiger Inhalts-Export (Seiten, Beiträge, Bilder, Kategorien) – einzige Inhalts-Quelle |
-| `theme/fish.zip` | Das Theme „Fish" (Twenty-Twenty-Five-Child) |
-| `uploads/` | Bilder (inkl. aller Größen) und Schriften, von jsDelivr geladen |
-| `bundle/block-theme-fish.zip` | Selbst­enthaltenes Bundle (Blueprint + Theme + Inhalt in einer Datei) – für die schnelle Demo |
+- **Tutorial**: [block-theme-fish-tutorial.md](block-theme-fish-tutorial.md) - Complete step-by-step guide
+- **WordPress Block Theme Docs**: [developer.wordpress.org/themes/block-themes](https://developer.wordpress.org/themes/block-themes/)
+- **theme.json Reference**: [developer.wordpress.org/themes/advanced-topics/theme-json](https://developer.wordpress.org/themes/advanced-topics/theme-json/)
+- **Query Loop Guide**: [wordpress.org/support/article/query-loop-block](https://wordpress.org/support/article/query-loop-block/)
 
-## Wie der Blueprint arbeitet
+## License
 
-1. Login und Site-Optionen (Name „Fische", Permalinks).
-2. Theme `fish.zip` installieren und aktivieren (Parent Twenty Twenty-Five ist in Playground gebündelt).
-3. `content.xml` importieren – Bilder werden von den GitHub-URLs in die Mediathek geladen, Beitragsbilder über den Export verknüpft.
-4. Aufräum-Schritt: Standard-Inhalte löschen, Startseite = „Fische", Beitragsseite = „Unterwasser-News", Site-Icon und Logo setzen.
-
-Das Theme bringt Header (mit Menü + Suche) und Footer als eigene Templates mit; die Menü-Links sind relativ und funktionieren daher auf jedem Host.
-
-## Lokal testen
-
-WordPress-Playground-CLI mit lokal ausgelieferten Dateien:
-
-```
-npx -y http-server . -p 8080 --cors -s          # Terminal 1 (in diesem Ordner)
-npx -y @wp-playground/cli@latest server --blueprint=./blueprint.json   # Terminal 2
-```
-
-Hinweis: Für den vollständig lokalen Test müssen die URLs in `blueprint.json`, `content.xml` und `theme/fish.zip` auf `http://localhost:8080` zeigen.
+This project is open source and available under the MIT License.
