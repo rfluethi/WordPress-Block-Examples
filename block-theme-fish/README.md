@@ -5,7 +5,7 @@ This directory demonstrates how to create a modern WordPress Block Theme with co
 ## Live Demo
 
 ```url
-https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/blueprint.json
+https://playground.wordpress.net/?blueprint-url=https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/bundle/block-theme-fish.zip
 ```
 
 ## Documentation
