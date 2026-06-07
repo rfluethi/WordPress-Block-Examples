@@ -4,22 +4,35 @@ Demo des Block-Themes **„Fish"** (Child-Theme von Twenty Twenty-Five) mit alle
 
 ## Demo starten
 
-[**▶ Live-Demo öffnen**](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/blueprint.json)
+Beide Links führen zur identischen Demo. Empfohlen ist die Bundle-Variante (lädt am schnellsten, alles in einer Datei).
+
+**Bundle (schnell, empfohlen):**
+
+[**▶ Live-Demo öffnen (Bundle)**](https://playground.wordpress.net/?blueprint-url=https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/bundle/block-theme-fish.zip)
 
 ```
-https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/blueprint.json
+https://playground.wordpress.net/?blueprint-url=https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/bundle/block-theme-fish.zip
+```
+
+**Einzel-Blueprint (zum Ansehen/Bearbeiten):**
+
+```
+https://playground.wordpress.net/?blueprint-url=https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/blueprint.json
 ```
 
 Admin-Login in der Demo: `admin` / `password`
+
+> Auslieferung über das **jsDelivr-CDN** (schnell, weltweit gecacht). Nach einem Push kann das CDN bis zu ~12 h alte Stände zeigen; bei Bedarf unter `https://www.jsdelivr.com/tools/purge` die geänderten URLs leeren oder einen Git-Tag (`@v1` statt `@main`) verwenden.
 
 ## Inhalt
 
 | Datei | Zweck |
 |---|---|
-| `blueprint.json` | Playground-Blueprint: installiert Theme, importiert Inhalte, setzt Start-/Beitragsseite |
+| `blueprint.json` | Playground-Blueprint (Einzeldatei, lädt Theme/Inhalt per jsDelivr-URL) |
 | `content.xml` | Vollständiger Inhalts-Export (Seiten, Beiträge, Bilder, Kategorien) – einzige Inhalts-Quelle |
 | `theme/fish.zip` | Das Theme „Fish" (Twenty-Twenty-Five-Child) |
-| `uploads/` | Bilder (inkl. aller Größen) und Schriften, die der Import von GitHub lädt |
+| `uploads/` | Bilder (inkl. aller Größen) und Schriften, von jsDelivr geladen |
+| `bundle/block-theme-fish.zip` | Selbst­enthaltenes Bundle (Blueprint + Theme + Inhalt in einer Datei) – für die schnelle Demo |
 
 ## Wie der Blueprint arbeitet
 

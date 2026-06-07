@@ -148,7 +148,7 @@
 	<generator>https://wordpress.org/?v=6.8.2</generator>
 
 <image>
-	<url>https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/cropped-Fisch-Titelseite-32x32.webp</url>
+	<url>https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/cropped-Fisch-Titelseite-32x32.webp</url>
 	<title>Fische</title>
 	<link>https://example.com</link>
 	<width>32</width>
@@ -292,9 +292,9 @@
 		<dc:creator><![CDATA[rfluethi]]></dc:creator>
 		<guid isPermaLink="false">https://example.com/?page_id=10</guid>
 		<description></description>
-		<content:encoded><![CDATA[<!-- wp:cover {"url":"https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/Wallpaper-with-a-sea-reef.webp","id":355,"hasParallax":true,"dimRatio":0,"isUserOverlayColor":true,"minHeight":35,"minHeightUnit":"em","sizeSlug":"full","align":"full","style":{"color":{"duotone":"unset"}},"layout":{"type":"default"}} -->
-<div class="wp-block-cover alignfull has-parallax" style="min-height:35em"><div class="wp-block-cover__image-background wp-image-355 size-full has-parallax" style="background-position:50% 50%;background-image:url(https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/Wallpaper-with-a-sea-reef.webp)"></div><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:image {"id":260,"width":"400px","sizeSlug":"full","linkDestination":"none","align":"center"} -->
-<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/cropped-Fisch-Titelseite.webp" alt="Schwarzstreifen-Kardinalbarsch mit charakteristischen dunklen horizontalen Streifen und weissen Punkten auf den Flossen vor weissem Hintergrund" class="wp-image-260" style="width:400px"/></figure>
+		<content:encoded><![CDATA[<!-- wp:cover {"url":"https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/Wallpaper-with-a-sea-reef.webp","id":355,"hasParallax":true,"dimRatio":0,"isUserOverlayColor":true,"minHeight":35,"minHeightUnit":"em","sizeSlug":"full","align":"full","style":{"color":{"duotone":"unset"}},"layout":{"type":"default"}} -->
+<div class="wp-block-cover alignfull has-parallax" style="min-height:35em"><div class="wp-block-cover__image-background wp-image-355 size-full has-parallax" style="background-position:50% 50%;background-image:url(https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/Wallpaper-with-a-sea-reef.webp)"></div><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:image {"id":260,"width":"400px","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/cropped-Fisch-Titelseite.webp" alt="Schwarzstreifen-Kardinalbarsch mit charakteristischen dunklen horizontalen Streifen und weissen Punkten auf den Flossen vor weissem Hintergrund" class="wp-image-260" style="width:400px"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading {"textAlign":"center","className":"is-style-default","style":{"elements":{"link":{"color":{"text":"var:preset|color|contrast"}}}},"textColor":"contrast","fontSize":"xx-large"} -->
@@ -318,7 +318,7 @@
 
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"default"}} -->
 <div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:post-template {"style":{"spacing":{"blockGap":"var:preset|spacing|20","margin":{"right":"var:preset|spacing|20","left":"var:preset|spacing|20"}}},"layout":{"type":"grid","columnCount":null,"minimumColumnWidth":"23rem"}} -->
-<!-- wp:cover {"url":"https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/Labyrinthfische.webp","useFeaturedImage":true,"dimRatio":0,"customOverlayColor":"#807d34","isUserOverlayColor":false,"minHeight":30,"minHeightUnit":"vw","sizeSlug":"full","style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"right":"0","left":"0"},"margin":{"top":"0","bottom":"0"}},"dimensions":{"aspectRatio":"4/3"}},"layout":{"type":"default"}} -->
+<!-- wp:cover {"url":"https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/Labyrinthfische.webp","useFeaturedImage":true,"dimRatio":0,"customOverlayColor":"#807d34","isUserOverlayColor":false,"minHeight":30,"minHeightUnit":"vw","sizeSlug":"full","style":{"spacing":{"blockGap":"var:preset|spacing|30","padding":{"right":"0","left":"0"},"margin":{"top":"0","bottom":"0"}},"dimensions":{"aspectRatio":"4/3"}},"layout":{"type":"default"}} -->
 <div class="wp-block-cover" style="margin-top:0;margin-bottom:0;padding-right:0;padding-left:0;min-height:30vw"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:#807d34"></span><div class="wp-block-cover__inner-container"><!-- wp:post-title {"textAlign":"center","isLink":true,"style":{"color":{"gradient":"radial-gradient(rgb(6,147,227) 0%,rgba(255,255,255,0) 62%,rgba(155,81,224,0) 100%)"}},"fontSize":"xx-large"} /--></div></div>
 <!-- /wp:cover -->
 <!-- /wp:post-template --></div>
@@ -584,7 +584,7 @@
 		<link>https://example.com/fische/labyrinthfische/</link>
 		<pubDate>Wed, 16 Jul 2025 10:51:02 +0000</pubDate>
 		<dc:creator><![CDATA[rfluethi]]></dc:creator>
-		<guid isPermaLink="false">https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/Labyrinthfische.webp</guid>
+		<guid isPermaLink="false">https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/Labyrinthfische.webp</guid>
 		<description></description>
 		<content:encoded><![CDATA[Fadenfisch mosaik männlich]]></content:encoded>
 		<excerpt:encoded><![CDATA[<a href="https://commons.wikimedia.org/wiki/File:Fadenfisch_mosaik_m%C3%A4nnlich.jpg">Alexander Siering</a>, <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, via Wikimedia Commons]]></excerpt:encoded>
@@ -602,7 +602,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/Labyrinthfische.webp]]></wp:attachment_url>
+						<wp:attachment_url><![CDATA[https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/Labyrinthfische.webp]]></wp:attachment_url>
 											<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2025/07/Labyrinthfische.webp]]></wp:meta_value>
@@ -621,7 +621,7 @@
 		<link>https://example.com/fische/malabarbaerbling/</link>
 		<pubDate>Wed, 16 Jul 2025 11:24:26 +0000</pubDate>
 		<dc:creator><![CDATA[rfluethi]]></dc:creator>
-		<guid isPermaLink="false">https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/Malabarbaerbling.webp</guid>
+		<guid isPermaLink="false">https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/Malabarbaerbling.webp</guid>
 		<description></description>
 		<content:encoded><![CDATA[Bild eines Malabarbärbling (Devario aequipinnatus)]]></content:encoded>
 		<excerpt:encoded><![CDATA[<a href="https://commons.wikimedia.org/wiki/File:Devario_aequipinnatus.JPG">Faucon</a>, <a href="https://creativecommons.org/licenses/by-sa/2.5">CC BY-SA 2.5</a>, via Wikimedia Commons]]></excerpt:encoded>
@@ -639,7 +639,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/Malabarbaerbling.webp]]></wp:attachment_url>
+						<wp:attachment_url><![CDATA[https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/Malabarbaerbling.webp]]></wp:attachment_url>
 											<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2025/07/Malabarbaerbling.webp]]></wp:meta_value>
@@ -662,7 +662,7 @@
 		<link>https://example.com/fische/schleierschwanz-goldfisch/</link>
 		<pubDate>Wed, 16 Jul 2025 11:29:56 +0000</pubDate>
 		<dc:creator><![CDATA[rfluethi]]></dc:creator>
-		<guid isPermaLink="false">https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/Schleierschwanz-Goldfisch.webp</guid>
+		<guid isPermaLink="false">https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/Schleierschwanz-Goldfisch.webp</guid>
 		<description></description>
 		<content:encoded><![CDATA[Der Goldfisch (Carassius auratus) ist ein Süsswasserfisch aus der Familie der Karpfenfische (Cyprinidae)]]></content:encoded>
 		<excerpt:encoded><![CDATA[<a href="https://commons.wikimedia.org/wiki/File:Redcap_(22764045).jpeg">Ricardo Leon</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons]]></excerpt:encoded>
@@ -680,7 +680,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/Schleierschwanz-Goldfisch.webp]]></wp:attachment_url>
+						<wp:attachment_url><![CDATA[https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/Schleierschwanz-Goldfisch.webp]]></wp:attachment_url>
 											<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2025/07/Schleierschwanz-Goldfisch.webp]]></wp:meta_value>
@@ -703,7 +703,7 @@
 		<link>https://example.com/fische/siamesischer-kampffisch-2/</link>
 		<pubDate>Wed, 16 Jul 2025 11:32:54 +0000</pubDate>
 		<dc:creator><![CDATA[rfluethi]]></dc:creator>
-		<guid isPermaLink="false">https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/Siamesischer-Kampffisch.webp</guid>
+		<guid isPermaLink="false">https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/Siamesischer-Kampffisch.webp</guid>
 		<description></description>
 		<content:encoded><![CDATA[Siamesische Kampffisch (Betta splendens)]]></content:encoded>
 		<excerpt:encoded><![CDATA[<a href="https://commons.wikimedia.org/wiki/File:Kampffisch_betta_splendenscele4.jpg">Marcel Burkhard</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0/de/deed.en">CC BY-SA 2.0 DE</a>, via Wikimedia Commons]]></excerpt:encoded>
@@ -721,7 +721,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/Siamesischer-Kampffisch.webp]]></wp:attachment_url>
+						<wp:attachment_url><![CDATA[https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/Siamesischer-Kampffisch.webp]]></wp:attachment_url>
 											<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2025/07/Siamesischer-Kampffisch.webp]]></wp:meta_value>
@@ -744,7 +744,7 @@
 		<link>https://example.com/fische/diskusfische/</link>
 		<pubDate>Wed, 16 Jul 2025 11:38:55 +0000</pubDate>
 		<dc:creator><![CDATA[rfluethi]]></dc:creator>
-		<guid isPermaLink="false">https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/Diskusfische.webp</guid>
+		<guid isPermaLink="false">https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/Diskusfische.webp</guid>
 		<description></description>
 		<content:encoded><![CDATA[Bild eines Diskusfisch oder Diskusbuntbarsch (Symphysodon aequifasciata) ]]></content:encoded>
 		<excerpt:encoded><![CDATA[<a href="https://en.m.wikipedia.org/wiki/File:Blue_Discus.jpg">Patrick Farrelly</a>, <a href="https://de.wikipedia.org/wiki/Gemeinfreiheit">Public domain</a>, via Wikimedia Commons]]></excerpt:encoded>
@@ -762,7 +762,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/Diskusfische.webp]]></wp:attachment_url>
+						<wp:attachment_url><![CDATA[https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/Diskusfische.webp]]></wp:attachment_url>
 											<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2025/07/Diskusfische.webp]]></wp:meta_value>
@@ -785,7 +785,7 @@
 		<link>https://example.com/fische/clownfisch-2/</link>
 		<pubDate>Wed, 16 Jul 2025 11:47:36 +0000</pubDate>
 		<dc:creator><![CDATA[rfluethi]]></dc:creator>
-		<guid isPermaLink="false">https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/Clownfisch.webp</guid>
+		<guid isPermaLink="false">https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/Clownfisch.webp</guid>
 		<description></description>
 		<content:encoded><![CDATA[Clownfisch oder Anemonenfisch (Gattung Amphiprion)]]></content:encoded>
 		<excerpt:encoded><![CDATA[<a href="https://www.pexels.com/de-de/foto/licht-wasser-draussen-transparent-7987532/">Egor Kamelev</a>, <a href="https://de.wikipedia.org/wiki/Gemeinfreiheit">Public domain</a>, via Pexels]]></excerpt:encoded>
@@ -803,7 +803,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/Clownfisch.webp]]></wp:attachment_url>
+						<wp:attachment_url><![CDATA[https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/Clownfisch.webp]]></wp:attachment_url>
 											<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2025/07/Clownfisch.webp]]></wp:meta_value>
@@ -826,7 +826,7 @@
 		<link>https://example.com/fische/schwarzstreifen-kardinalbarsch-ostorhinchus-nigrofasciatus/</link>
 		<pubDate>Wed, 16 Jul 2025 13:19:05 +0000</pubDate>
 		<dc:creator><![CDATA[rfluethi]]></dc:creator>
-		<guid isPermaLink="false">https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/cropped-Fisch-Titelseite.webp</guid>
+		<guid isPermaLink="false">https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/cropped-Fisch-Titelseite.webp</guid>
 		<description></description>
 		<content:encoded><![CDATA[Schwarzstreifen-Kardinalbarsch mit charakteristischen dunklen horizontalen Streifen und weissen Punkten auf den Flossen vor weissem Hintergrund]]></content:encoded>
 		<excerpt:encoded><![CDATA[Erstellt mit <a href="https://openai.com/">ChatGPT</a> <a href="https://openai.com/dall-e-3">DALL-E</a>]]></excerpt:encoded>
@@ -844,7 +844,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/cropped-Fisch-Titelseite.webp]]></wp:attachment_url>
+						<wp:attachment_url><![CDATA[https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/cropped-Fisch-Titelseite.webp]]></wp:attachment_url>
 											<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_attachment_image_alt]]></wp:meta_key>
 		<wp:meta_value><![CDATA[Schwarzstreifen-Kardinalbarsch mit charakteristischen dunklen horizontalen Streifen und weissen Punkten auf den Flossen vor weissem Hintergrund]]></wp:meta_value>
@@ -1271,7 +1271,7 @@
 		<link>https://example.com/fische/wallpaper-with-a-sea-reef/</link>
 		<pubDate>Wed, 16 Jul 2025 16:56:16 +0000</pubDate>
 		<dc:creator><![CDATA[rfluethi]]></dc:creator>
-		<guid isPermaLink="false">https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/Wallpaper-with-a-sea-reef.webp</guid>
+		<guid isPermaLink="false">https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/Wallpaper-with-a-sea-reef.webp</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[Erstellt mit <a href="https://openai.com/">ChatGPT</a> <a href="https://openai.com/dall-e-3">DALL-E</a>]]></excerpt:encoded>
@@ -1289,7 +1289,7 @@
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/main/block-theme-fish/uploads/2025/07/Wallpaper-with-a-sea-reef.webp]]></wp:attachment_url>
+						<wp:attachment_url><![CDATA[https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/block-theme-fish/uploads/2025/07/Wallpaper-with-a-sea-reef.webp]]></wp:attachment_url>
 											<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 		<wp:meta_value><![CDATA[2025/07/Wallpaper-with-a-sea-reef.webp]]></wp:meta_value>

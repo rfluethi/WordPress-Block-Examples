@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  WXR-Vorlage (WordPress eXtended RSS). Ersetze die Beispiel-Items durch deinen
+  echten Export aus der Local-Installation (Werkzeuge -> Daten exportieren).
+  Bild-URLs zeigen auf jsDelivr: .../DEMO_SLUG/uploads/<datei>.
+  Beim Import werden die Bilder von dort in die Mediathek geladen.
+-->
+<rss version="2.0"
+	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:wp="http://wordpress.org/export/1.2/">
+<channel>
+	<title>DEMO_TITEL</title>
+	<description>DEMO_UNTERTITEL</description>
+	<language>de</language>
+	<wp:wxr_version>1.2</wp:wxr_version>
+
+	<!-- Beispiel: Startseite -->
+	<item>
+		<title>Startseite</title>
+		<wp:post_type>page</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>STARTSEITE_SLUG</wp:post_name>
+		<content:encoded><![CDATA[<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Willkommen</h2>
+<!-- /wp:heading -->]]></content:encoded>
+	</item>
+
+	<!-- Beispiel: Beitrag mit Bild -->
+	<item>
+		<title>Beispiel-Beitrag</title>
+		<wp:post_type>post</wp:post_type>
+		<wp:status>publish</wp:status>
+		<wp:post_name>beispiel-beitrag</wp:post_name>
+		<content:encoded><![CDATA[<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/DEMO_SLUG/uploads/beispiel.webp" alt="Beispielbild"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>Beispieltext für den Beitrag.</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+	</item>
+
+	<!-- Beispiel: Anhang (Bild). Verknüpft Beitragsbild via _thumbnail_id im echten Export. -->
+	<item>
+		<title>beispiel</title>
+		<wp:post_type>attachment</wp:post_type>
+		<wp:status>inherit</wp:status>
+		<wp:post_name>beispiel</wp:post_name>
+		<wp:attachment_url>https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/DEMO_SLUG/uploads/beispiel.webp</wp:attachment_url>
+	</item>
+
+</channel>
+</rss>

@@ -1,0 +1,47 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/",
+  "preferredVersions": {
+    "php": "8.2",
+    "wp": "6.8"
+  },
+  "features": {
+    "networking": true
+  },
+  "steps": [
+    {
+      "step": "login",
+      "username": "admin",
+      "password": "password"
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "DEMO_TITEL",
+        "blogdescription": "DEMO_UNTERTITEL",
+        "permalink_structure": "/%postname%/"
+      }
+    },
+    {
+      "step": "installTheme",
+      "themeData": {
+        "resource": "url",
+        "url": "https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/DEMO_SLUG/theme/THEME.zip"
+      },
+      "options": {
+        "activate": true
+      }
+    },
+    {
+      "step": "importWxr",
+      "file": {
+        "resource": "url",
+        "url": "https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/DEMO_SLUG/content.xml"
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require_once 'wordpress/wp-load.php'; foreach (array(array('hello-world','post'), array('sample-page','page')) as $d) { $p = get_page_by_path($d[0], OBJECT, $d[1]); if ($p) { wp_delete_post($p->ID, true); } } $front = get_page_by_path('STARTSEITE_SLUG'); if ($front) { update_option('show_on_front','page'); update_option('page_on_front',$front->ID); } flush_rewrite_rules();"
+    }
+  ]
+}
