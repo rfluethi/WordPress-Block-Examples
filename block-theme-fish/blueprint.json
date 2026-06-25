@@ -43,14 +43,8 @@
       }
     },
     {
-      "step": "installPlugin",
-      "pluginData": {
-        "resource": "wordpress.org/plugins",
-        "slug": "hello-dolly"
-      },
-      "options": {
-        "activate": true
-      }
+      "step": "activatePlugin",
+      "pluginPath": "hello.php"
     },
     {
       "step": "installPlugin",
