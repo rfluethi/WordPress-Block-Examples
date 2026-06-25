@@ -43,20 +43,6 @@
       }
     },
     {
-      "step": "activatePlugin",
-      "pluginPath": "hello.php"
-    },
-    {
-      "step": "installPlugin",
-      "pluginData": {
-        "resource": "wordpress.org/plugins",
-        "slug": "wordpress-importer"
-      },
-      "options": {
-        "activate": true
-      }
-    },
-    {
       "step": "importWxr",
       "file": {
         "resource": "url",

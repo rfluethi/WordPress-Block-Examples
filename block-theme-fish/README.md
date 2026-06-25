@@ -85,9 +85,11 @@ fish/
 
 ## Technical Requirements
 
-- WordPress Version: 6.0+
-- PHP Version: 7.4+
+- WordPress Version: 6.8+ (Fish is a child theme of Twenty Twenty-Five)
+- PHP Version: 7.2+
 - Block Editor (Gutenberg)
+
+The Playground demo boots the latest WordPress and PHP and installs the current Twenty Twenty-Five as parent theme, so it stays up to date automatically.
 
 ## Learning Resources
 
