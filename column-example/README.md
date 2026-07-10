@@ -8,7 +8,7 @@ This directory demonstrates how to create **professional responsive column layou
 ## Live Demo
 
 ```url
-https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Playgrounds/main/column-example/blueprint.json
+https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/optim-column-example/column-example/blueprint.json
 ```
 
 ## Documentation
