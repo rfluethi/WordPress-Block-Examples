@@ -20,7 +20,7 @@
       "step": "importWxr",
       "file": {
         "resource": "url",
-        "url": "https://raw.githubusercontent.com/rfluethi/WordPress-Block-Examples/optim-column-example/column-example/column-example.xml"
+        "url": "https://cdn.jsdelivr.net/gh/rfluethi/WordPress-Block-Examples@main/column-example/column-example.xml"
       }
     }
   ],
